@@ -40,15 +40,19 @@ Access the interactive visual analysis hosted on Tableau Public:
 
 ## 📁 Repository Structure
 
-```text
+```plaintext
+Olist-ecommerce-analytics/
 ├── assets/
 │   └── dashboard_preview.png    # Dashboard preview image for documentation
 ├── data/
 │   ├── funnel_metrics.csv       # Aggregated funnel counts and percentage drop-offs
 │   ├── repeat_orders.csv        # Calculated customer repurchase intervals
 │   └── category_ranks.csv       # Ranked monthly revenue by product category
+├── dashboards/
+│   └── olist_analytics.twbx     # Interactive Tableau packaged workbook
 ├── sql/
 │   ├── 01_funnel_analysis.sql   # Fulfillment stage distribution query
 │   ├── 02_repeat_purchases.sql  # Customer purchase interval calculation (LAG)
 │   └── 03_category_ranks.sql    # Monthly category revenue ranking (DENSE_RANK)
+├── .gitignore                   # Git ignore configurations for system and temp files
 └── README.md                    # Project documentation
